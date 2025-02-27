@@ -1,164 +1,164 @@
 {
-    "pets": [
-      {
-        "id": 1,
-        "name": "Whiskers",
-        "type": "Cat",
-        "age_group": "Kitten",
-        "temperament": "Playful and curious, loves to explore.",
-        "activities": "Chasing toys, climbing, and cuddling.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0IQhVr9DDJCq61QX28zCoiqDrvezBh5ylw&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 2,
-        "name": "Mittens",
-        "type": "Cat",
-        "age_group": "Adult",
-        "temperament": "Friendly and independent, enjoys quiet time.",
-        "activities": "Napping, sunbathing, and light play.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9q0atkLog6mwG62uVmSsSVpcwuCoGBoNQGw&s",
-        "adoption_status": "Adopted"
-      },
-      {
-        "id": 3,
-        "name": "Shadow",
-        "type": "Cat",
-        "age_group": "Adult",
-        "temperament": "Loyal and affectionate, bonds deeply with people.",
-        "activities": "Playing with feather toys and snuggling.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6GZb3iik4izL0hGieUpYjvN2_HpnKMEG1CQ&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 4,
-        "name": "Luna",
-        "type": "Cat",
-        "age_group": "Kitten",
-        "temperament": "Energetic and social, loves to be around people.",
-        "activities": "Climbing, playing with other cats, and exploring.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcpcDBTSAPrQOQD2-335-I6aya2xHgq8sMQ&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 5,
-        "name": "Max",
-        "type": "Dog",
-        "age_group": "Puppy",
-        "temperament": "Excitable and friendly, loves attention.",
-        "activities": "Running, fetching, and playing with toys.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Js7N6e649aNcz4IJWmsZKnZ21ibv5OHJOg&s",
-        "adoption_status": "Adopted"
-      },
-      {
-        "id": 6,
-        "name": "Bella",
-        "type": "Dog",
-        "age_group": "Adult",
-        "temperament": "Loyal and calm, enjoys being around family.",
-        "activities": "Walking, playing in the yard, and resting.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCFvNt8NMeobg5oxu0NvtYQy1bpXV-jY0aw&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 7,
-        "name": "Rocky",
-        "type": "Dog",
-        "age_group": "Senior pet",
-        "temperament": "Gentle and affectionate, loves a quiet environment.",
-        "activities": "Short walks and naps on the couch.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4g0jKpurBW3aiff0Pan75DMhpZCHzXE3TgQ&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 8,
-        "name": "Sophie",
-        "type": "Dog",
-        "age_group": "Adult",
-        "temperament": "Friendly and outgoing, loves meeting new people.",
-        "activities": "Running and playing with other dogs.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkhNrHDoLKHI4KoUDamhtHQwWKp9GuggqWmQ&s",
-        "adoption_status": "Adopted"
-      },
-      {
-        "id": 9,
-        "name": "Felix",
-        "type": "Cat",
-        "age_group": "Senior pet",
-        "temperament": "Calm and independent, enjoys solitude.",
-        "activities": "Napping, occasional playtime.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4MTKxKMt1nmnb2So9o_eLOB84OLZN1pfmg&s",
-        "adoption_status": "Adopted"
-      },
-      {
-        "id": 10,
-        "name": "Simba",
-        "type": "Cat",
-        "age_group": "Adult",
-        "temperament": "Friendly and confident, loves attention.",
-        "activities": "Playing with toys, sitting on laps.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5Fl_pjMUX7qMWzv90qW_YkOwSNLmQUq8qw&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 11,
-        "name": "Zara",
-        "type": "Cat",
-        "age_group": "Kitten",
-        "temperament": "Curious and lively, loves to play.",
-        "activities": "Chasing laser pointers and climbing.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU9JfCgf_lHtaE4ec-lK4OIRKHac_bb_a_Q&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 12,
-        "name": "Oliver",
-        "type": "Cat",
-        "age_group": "Adult",
-        "temperament": "Sociable and talkative, loves to follow people around.",
-        "activities": "Playing with interactive toys and sitting by the window.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa244pdjA98Cd8PuKkrR9EcOEjhFWoEqkOXg&s",
-        "adoption_status": "Adopted"
-      },
-      {
-        "id": 13,
-        "name": "Daisy",
-        "type": "Dog",
-        "age_group": "Puppy",
-        "temperament": "Lively and affectionate, loves to play with others.",
-        "activities": "Running and playing fetch.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQrNtVwHLPW2MKg7qW4mkom5RN9HdfHgCgMw&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 14,
-        "name": "Charlie",
-        "type": "Dog",
-        "age_group": "Adult",
-        "temperament": "Gentle and friendly, enjoys being around people.",
-        "activities": "Going for walks and playing fetch.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Nf8hNeUSKYYCb8O5G8zTrBs9oX7wMD9YUA&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 15,
-        "name": "Sadie",
-        "type": "Dog",
-        "age_group": "Senior pet",
-        "temperament": "Calm and loving, enjoys quiet time with people.",
-        "activities": "Short walks, lounging, and gentle play.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNG_PRe95sb_dKJgKkfMR__GxrbLUis36yQ&s",
-        "adoption_status": "Adoptable"
-      },
-      {
-        "id": 16,
-        "name": "Buddy",
-        "type": "Dog",
-        "age_group": "Adult",
-        "temperament": "Loyal and protective, loves being with family.",
-        "activities": "Running, fetch, and guarding the yard.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0a0jnAKR49YruK3yXsFw1aQLihD3rvEofBw&s",
-        "adoption_status": "Adopted"
-      }
-    ]
-  }
+  "pets": [
+    {
+      "id": 1,
+      "name": "Whiskers",
+      "type": "Cat",
+      "age_group": "Young",
+      "temperament": "Playful and curious, loves to explore.",
+      "activities": "Chasing toys, climbing, and cuddling.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0IQhVr9DDJCq61QX28zCoiqDrvezBh5ylw&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 2,
+      "name": "Mittens",
+      "type": "Cat",
+      "age_group": "Adult",
+      "temperament": "Friendly and independent, enjoys quiet time.",
+      "activities": "Napping, sunbathing, and light play.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9q0atkLog6mwG62uVmSsSVpcwuCoGBoNQGw&s",
+      "adoption_status": "Adopted"
+    },
+    {
+      "id": 3,
+      "name": "Shadow",
+      "type": "Cat",
+      "age_group": "Adult",
+      "temperament": "Loyal and affectionate, bonds deeply with people.",
+      "activities": "Playing with feather toys and snuggling.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6GZb3iik4izL0hGieUpYjvN2_HpnKMEG1CQ&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "type": "Cat",
+      "age_group": "Young",
+      "temperament": "Energetic and social, loves to be around people.",
+      "activities": "Climbing, playing with other cats, and exploring.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcpcDBTSAPrQOQD2-335-I6aya2xHgq8sMQ&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 5,
+      "name": "Max",
+      "type": "Dog",
+      "age_group": "Young",
+      "temperament": "Excitable and friendly, loves attention.",
+      "activities": "Running, fetching, and playing with toys.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Js7N6e649aNcz4IJWmsZKnZ21ibv5OHJOg&s",
+      "adoption_status": "Adopted"
+    },
+    {
+      "id": 6,
+      "name": "Bella",
+      "type": "Dog",
+      "age_group": "Adult",
+      "temperament": "Loyal and calm, enjoys being around family.",
+      "activities": "Walking, playing in the yard, and resting.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCFvNt8NMeobg5oxu0NvtYQy1bpXV-jY0aw&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 7,
+      "name": "Rocky",
+      "type": "Dog",
+      "age_group": "Senior pet",
+      "temperament": "Gentle and affectionate, loves a quiet environment.",
+      "activities": "Short walks and naps on the couch.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4g0jKpurBW3aiff0Pan75DMhpZCHzXE3TgQ&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 8,
+      "name": "Sophie",
+      "type": "Dog",
+      "age_group": "Adult",
+      "temperament": "Friendly and outgoing, loves meeting new people.",
+      "activities": "Running and playing with other dogs.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkhNrHDoLKHI4KoUDamhtHQwWKp9GuggqWmQ&s",
+      "adoption_status": "Adopted"
+    },
+    {
+      "id": 9,
+      "name": "Felix",
+      "type": "Cat",
+      "age_group": "Senior pet",
+      "temperament": "Calm and independent, enjoys solitude.",
+      "activities": "Napping, occasional playtime.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4MTKxKMt1nmnb2So9o_eLOB84OLZN1pfmg&s",
+      "adoption_status": "Adopted"
+    },
+    {
+      "id": 10,
+      "name": "Simba",
+      "type": "Cat",
+      "age_group": "Adult",
+      "temperament": "Friendly and confident, loves attention.",
+      "activities": "Playing with toys, sitting on laps.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5Fl_pjMUX7qMWzv90qW_YkOwSNLmQUq8qw&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 11,
+      "name": "Zara",
+      "type": "Cat",
+      "age_group": "Young",
+      "temperament": "Curious and lively, loves to play.",
+      "activities": "Chasing laser pointers and climbing.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU9JfCgf_lHtaE4ec-lK4OIRKHac_bb_a_Q&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 12,
+      "name": "Oliver",
+      "type": "Cat",
+      "age_group": "Adult",
+      "temperament": "Sociable and talkative, loves to follow people around.",
+      "activities": "Playing with interactive toys and sitting by the window.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa244pdjA98Cd8PuKkrR9EcOEjhFWoEqkOXg&s",
+      "adoption_status": "Adopted"
+    },
+    {
+      "id": 13,
+      "name": "Daisy",
+      "type": "Dog",
+      "age_group": "Young",
+      "temperament": "Lively and affectionate, loves to play with others.",
+      "activities": "Running and playing fetch.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQrNtVwHLPW2MKg7qW4mkom5RN9HdfHgCgMw&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 14,
+      "name": "Charlie",
+      "type": "Dog",
+      "age_group": "Adult",
+      "temperament": "Gentle and friendly, enjoys being around people.",
+      "activities": "Going for walks and playing fetch.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Nf8hNeUSKYYCb8O5G8zTrBs9oX7wMD9YUA&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 15,
+      "name": "Sadie",
+      "type": "Dog",
+      "age_group": "Senior pet",
+      "temperament": "Calm and loving, enjoys quiet time with people.",
+      "activities": "Short walks, lounging, and gentle play.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNG_PRe95sb_dKJgKkfMR__GxrbLUis36yQ&s",
+      "adoption_status": "Adoptable"
+    },
+    {
+      "id": 16,
+      "name": "Buddy",
+      "type": "Dog",
+      "age_group": "Adult",
+      "temperament": "Loyal and protective, loves being with family.",
+      "activities": "Running, fetch, and guarding the yard.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0a0jnAKR49YruK3yXsFw1aQLihD3rvEofBw&s",
+      "adoption_status": "Adopted"
+    }
+  ]
+}
