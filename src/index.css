@@ -11,3 +11,166 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+------------------------BASE TEST CSS BELOW------------------------
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Header & Navigation Bar */
+header {
+  background-color: #f0f0f0; /* Off-white */
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  background-color: #f0f0f0; /* Off-white */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Post Page (Available Pets) */
+.main-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.pet-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pet-card .pet-info {
+  padding: 15px;
+}
+
+.pet-card .pet-info h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.pet-card .pet-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Cat Theme - Green */
+.cat-theme {
+  background-color: #eaf7e2; /* Light green */
+}
+
+.cat-theme .pet-card {
+  border: 2px solid #4CAF50; /* Green */
+}
+
+.cat-theme .pet-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2); /* Darker green shadow */
+}
+
+/* Dog Theme - Pink */
+.dog-theme {
+  background-color: #fce4ec; /* Light pink */
+}
+
+.dog-theme .pet-card {
+  border: 2px solid #e91e63; /* Pink */
+}
+
+.dog-theme .pet-card:hover {
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2); /* Darker pink shadow */
+}
+
+/* Form Page - Add Adoptable Pet */
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
