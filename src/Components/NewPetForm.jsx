@@ -1,7 +1,7 @@
 import React, { useState } from "react";
  
 
-function NewPetForm() {
+function NewPetForm({ pets, setPets}) {
   const [ newPet, setNewPet ] = useState({
     name: "",
     type: "Dog",
@@ -33,7 +33,7 @@ function NewPetForm() {
     })
       .then(resp => resp.json())
       .then(data => {
-        console.log(data)
+        setPets([...pets, data]);
         setNewPet({
           name: "",
           type: "Dog",
