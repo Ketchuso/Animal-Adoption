@@ -12,8 +12,8 @@ function NewPetForm() {
           <input type="text" name="image" placeholder="Image URL" />
           <input type="text" name="type" placeholder="Place holder Cat/Dog" />
           <input type="text" name="age group" placeholder="Age group" />
-          <input type="text" name="temperment" placeholder="temperment" />
-          <input type="text" name="activities" placeholder="activities" />
+          <input type="text" name="temperment" placeholder="Describe temperment" />
+          <input type="text" name="activities" placeholder="Activities" />
           <button type="submit">Add Pet</button>
         </form>
       </div>
