@@ -33,6 +33,7 @@ function PetContainer({ pets, setPets }) {
         ageGroup={pet.age_group}
         temperament={pet.temperament}
         adoptionStatus={pet.adoption_status}
+        type={pet.type}
         />)
 
         const handleFilterChange = (e) => {
@@ -44,11 +45,11 @@ function PetContainer({ pets, setPets }) {
         <div>
             <div>
                 <button value='all' onClick={handleFilterChange}> 🐾 View All Pets 🐾 </button>
-                <button value='cat' onClick={handleFilterChange}> 🐈 View All Cats 🐈 </button>
-                <button value='dog' onClick={handleFilterChange}> 🐕 View All Dogs 🐕 </button>
+                <button value='cat' className='cat-theme' onClick={handleFilterChange}> 🐈 View All Cats 🐈 </button>
+                <button value='dog' className='dog-theme' onClick={handleFilterChange}> 🐕 View All Dogs 🐕 </button>
             </div>
 
-            <ul className="cards">
+            <ul className="main-container">
                 {petCards}
             </ul>
         </div>

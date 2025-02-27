@@ -1,14 +1,15 @@
 import React from "react";
 
 
-function PetCards({ id, name, image, activities, ageGroup, temperament, adoptionStatus, viewPetClick}) {
+function PetCards({ id, name, image, activities, ageGroup, temperament, adoptionStatus, type}) {
+    const petClass = type === 'Cat' ? 'cat-theme' : type === 'Dog' ? 'dog-theme' : '';
 
     // function viewPetClick() {
 
     // }
 
     return(
-        <li className="card" >
+        <div className={`pet-card ${petClass}`} >
             <img src={image} alt={name} />
             <h4>Hi! My name is: {name}</h4>
             <h5>Age Group: {ageGroup}</h5>
@@ -16,7 +17,7 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
             <p>This Pet Enjoys: {activities}</p>
             <p>Adoption Status: {adoptionStatus}</p>
             {/* <button onClick={viewPetClick.id}>🐾View Pet!🐾</button> */}
-        </li>
+        </div>
     )
 }
 

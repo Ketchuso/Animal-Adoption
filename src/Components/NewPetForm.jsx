@@ -48,7 +48,7 @@ function NewPetForm({ pets, setPets}) {
 
     
     return(
-        <div className="new-pet-form">
+        <div className="form">
         <h2>New Adoptable Pet</h2>
         <form>
           <input onChange={petChange} type="text" name="name" placeholder="Pet name" />
