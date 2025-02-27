@@ -8,6 +8,23 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
 
     // }
 
+    function handleClick(){
+        fetch(`http://localhost:5002/pets/${id}`,{
+            method: "DELETE",
+            headers: {
+                'Content-Type': "application/json"
+            },
+        })
+            .then(resp => {
+                if (resp.ok){
+                    setPets((prevList) => prevList.filter((pet) => pet.id !== id))
+                }else{
+                    console.error(`Failed to delete pet. Status: ${resp.status} - ${resp.statusText}`)
+                }
+            })
+            .catch(error => console.error("Error deleting pet:", error))
+    }
+
     return(
         <div className={`pet-card ${petClass}`} >
             <img src={image} alt={name} />
@@ -17,6 +34,7 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
             <p>This Pet Enjoys: {activities}</p>
             <p>Adoption Status: {adoptionStatus}</p>
             {/* <button onClick={viewPetClick.id}>🐾View Pet!🐾</button> */}
+            <button onClick={handleClick}>Delete Animal</button>
         </div>
     )
 }

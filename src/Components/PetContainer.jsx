@@ -8,7 +8,7 @@ function PetContainer({ pets, setPets }) {
       fetch("http://localhost:5002/pets")
       .then((resp) => resp.json())
       .then((allPets) => setPets(allPets))
-    }, [pets])
+    }, [setPets])
 
 
     const filteredPets = pets.filter((pet) => {
@@ -27,12 +27,14 @@ function PetContainer({ pets, setPets }) {
     const petCards = filteredPets.map((pet) =>
         <PetCards
         key={pet.id} 
+        id={pet.id}
         name={pet.name} 
         image={pet.image}
         activities={pet.activities}
         ageGroup={pet.age_group}
         temperament={pet.temperament}
         adoptionStatus={pet.adoption_status}
+        setPets={setPets}
         type={pet.type}
         />)
 
