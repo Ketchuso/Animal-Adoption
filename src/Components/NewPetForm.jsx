@@ -1,20 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
  
 
-function NewPetForm() {
+function NewPetForm({ pets, setPets}) {
+  const [ newPet, setNewPet ] = useState({
+    name: "",
+    type: "Dog",
+    age_group: "Adult",
+    temperament: "",
+    activities: "",
+    image: "",
+    adoption_status: "Adoptable"
+  })
+
+  function petChange(event){
+    const { name, value } = event.target;
+    setNewPet({
+      ...newPet,
+      [name]: value
+    })
+  }
+
+  function handleSubmit(event){
+    event.preventDefault();
+    const newPetData = {...newPet}
+
+    fetch("http://localhost:5002/pets", {
+      method: "POST",
+      body: JSON.stringify(newPetData),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(resp => resp.json())
+      .then(data => {
+        setPets([...pets, data]);
+        setNewPet({
+          name: "",
+          type: "Dog",
+          age_group: "Adult",
+          temperament: "",
+          activities: "",
+          image: "",
+          adoption_status: "Adoptable"
+        })
+      })
+  }
 
     
     return(
         <div className="new-pet-form">
         <h2>New Adoptable Pet</h2>
         <form>
-          <input type="text" name="name" placeholder="Pet name" />
-          <input type="text" name="image" placeholder="Image URL" />
-          <input type="text" name="type" placeholder="Place holder Cat/Dog" />
-          <input type="text" name="age group" placeholder="Age group" />
-          <input type="text" name="temperment" placeholder="Describe temperment" />
-          <input type="text" name="activities" placeholder="Activities" />
-          <button type="submit">Add Pet</button>
+          <input onChange={petChange} type="text" name="name" placeholder="Pet name" />
+          <input onChange={petChange} type="text" name="image" placeholder="Image URL" />
+          <p>
+              Animal Type:
+              <label><input onChange={petChange} type="radio" name="type" value={"Cat"}/> Cat </label>
+              <label><input onChange={petChange} type="radio" name="type" value={"Dog"} defaultChecked={true}/> Dog </label>
+          </p>
+          <p>
+              Age Group:
+              <label><input onChange={petChange} type="radio" name="age_group" value={"Young"}/> Young </label>
+              <label><input onChange={petChange} type="radio" name="age_group" value={"Adult"} defaultChecked={true}/> Adult </label>
+              <label><input onChange={petChange} type="radio" name="age_group" value={"Senior Pet"}/> Senior Pet </label>
+          </p>
+          <input onChange={petChange} type="text" name="temperament" placeholder="temperament" />
+          <input onChange={petChange} type="text" name="activities" placeholder="activities" />
+          <button onClick={handleSubmit} type="submit">Add Pet</button>
         </form>
       </div>
     )
