@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PetCards from "./PetCards";
 
-function PetContainer() {
-    const [pets, setPets] = useState([])
+function PetContainer({ pets, setPets }) {
+    
 
     useEffect(() => {
       fetch("http://localhost:5002/pets")
