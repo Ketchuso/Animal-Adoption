@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import PetCards from "./PetCards";
 
-function PetContainer() {
-    const [pets, setPets] = useState([])
+function PetContainer({ pets, setPets }) {
     const [petFilter, setPetFilter] = useState('all')
 
     useEffect(() => {
       fetch("http://localhost:5002/pets")
-      fetch("http://localhost:5002/pets")
       .then((resp) => resp.json())
       .then((allPets) => setPets(allPets))
-    }, [])
+    }, [pets])
 
 
     const filteredPets = pets.filter((pet) => {
