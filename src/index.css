@@ -66,6 +66,30 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
+
+footer {
+  background-color: #f0f0f0; /* Off-white */
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#footerLogo{
+  margin-top: -10px;
+}
+
+#contact{
+  margin-left: -25%;
+  margin-top: 60px;
+}
+
+#address{
+  margin-right: -25%;
+  margin-top: -128px;
+}
+
 /* Main Post Page (Available Pets) */
 .main-container {
   padding: 20px;
