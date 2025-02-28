@@ -10,9 +10,9 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
         setViewPet(!viewPet)
     }
 
-    const handleViewClick = () => {
-        viewPetClick(id)
-    }
+    // const handleViewClick = () => {
+    //     viewPetClick(id)
+    // }
 
     function handleClick(){
         fetch(`http://localhost:5002/pets/${id}`,{
@@ -33,7 +33,7 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
 
     return(
         <div className={`pet-card ${petClass}`} >
-            <img src={image} alt={name} onClick={handleViewClick}/>
+            <img src={image} alt={name}/>
             <h4>Hi! My name is: {name}</h4>
             {viewPet && (
                 <div>
