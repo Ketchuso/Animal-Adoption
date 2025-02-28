@@ -156,6 +156,15 @@ footer {
   color: #666;
 }
 
+.pet-card button {
+  background-color:#BB8588;
+  cursor: pointer;
+  border: 2px black;
+  border-radius: 10px;
+  padding: 2.5px 5px;
+  margin: 3px;
+}
+
 /* All Pets Theme */
 .all-theme {
   background-color: #f8eeb7; /* Light yellow */
