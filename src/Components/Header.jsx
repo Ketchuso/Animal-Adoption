@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
 
@@ -14,7 +15,16 @@ function Header() {
                        🐕
                 </span>
             </h1>
-           
+            <NavLink to='/'>
+                <h2>
+                    Home
+                </h2>
+            </NavLink>
+            <NavLink to='/newpetform'>
+                <h2>
+                    AddPet
+                </h2>
+            </NavLink>
         </header>
     )
 }
