@@ -17,7 +17,17 @@ function Header() {
             </h1>
             <NavLink to='/'>
                 <h2>
-                    Home
+                    All Pets
+                </h2>
+            </NavLink>
+            <NavLink to='/cats'>
+                <h2>
+                    Cats
+                </h2>
+            </NavLink>
+            <NavLink to='/dogs'>
+                <h2>
+                    Dogs
                 </h2>
             </NavLink>
             <NavLink to='/newpetform'>

@@ -8,6 +8,8 @@ import App from './Components/App';
 import PetPage from './Components/PetPage';
 import PetContainer from './Components/PetContainer';
 import NewPetForm from './Components/NewPetForm';
+import Cats from './Components/Cats';
+import Dogs from './Components/Dogs';
 
 
 const router = createBrowserRouter([
@@ -20,9 +22,10 @@ const router = createBrowserRouter([
         children:[
           {index: true, element: <PetContainer />},
           {path: 'newpetform', element: <NewPetForm />},
+          {path: 'cats', element: <Cats/>},
+          {path: 'dogs', element: <Dogs/>}
         ]
-      },
-      
+      }
     ]
   }
 ])
