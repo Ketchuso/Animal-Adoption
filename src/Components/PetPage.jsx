@@ -14,7 +14,7 @@ function PetPage() {
 
     return(
         <main>
-            <Outlet context={context}/>
+            <Outlet className="main-container" context={context}/>
             {/* <PetContainer pets={pets} setPets={setPets}/>
             <NewPetForm pets={pets} setPets={setPets}/> */}
         </main>

@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 code {
@@ -27,6 +30,9 @@ body {
   color: #333;
   font-size: 16px;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header & Navigation Bar */
@@ -89,6 +95,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: auto; /* This will push the footer to the bottom */
 }
 
 #footerLogo{
@@ -112,6 +119,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+  flex-grow: 1; /* This will make the main content area expand to take available space */
 }
 
 .pet-card {
@@ -196,9 +204,8 @@ footer {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  max-width: 600px;
   margin: 20px auto;
-  
 }
 
 form {
@@ -207,16 +214,29 @@ form {
 }
 
 .form-input,
-.form-select,
 .form-textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
+  width: 97%;
+  padding: 7px ;
+  margin: 10px 0 ;
   border: 2px solid #ddd;
   border-radius: 4px;
 }
 
-.form input[type="submit"] {
+
+.form-select-container {
+  display: flex; 
+  align-items:center; 
+}
+
+.form-select {
+  margin-right: 10px;
+}
+
+
+.form-submit {
+  background-color: #A3A380; /* Green */
+}
+.form-submit:hover {
   background-color: #4CAF50; /* Green */
   color: white;
   border: none;
@@ -228,7 +248,7 @@ form {
 }
 
 .form-textarea {
-  min-height: 100px;
+  min-height: 150px !important;
 }
 
 
