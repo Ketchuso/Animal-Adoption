@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import PetCards from "./PetCards";
 import { useOutletContext } from "react-router-dom";
 
-function PetContainer() {
+function Cats() {
+    const [petFilter, setPetFilter] = useState('cat')
     const { pets, setPets } = useOutletContext()
     console.log(pets)
 
@@ -12,7 +13,15 @@ function PetContainer() {
       .then((allPets) => setPets(allPets))
     }, [setPets])
 
-    const petCards = pets.map((pet) =>
+
+    const filteredPets = pets.filter((pet) => {
+        if (petFilter === 'cat' && pet.type === 'Cat') {
+            return true;
+        }
+    });
+
+
+    const petCards = filteredPets.map((pet) =>
         <PetCards
         key={pet.id} 
         id={pet.id}
@@ -24,7 +33,9 @@ function PetContainer() {
         adoptionStatus={pet.adoption_status}
         setPets={setPets}
         type={pet.type}
-        />)
+        />
+    )
+
 
     return(
         <div>
@@ -35,4 +46,4 @@ function PetContainer() {
     )
 }
 
-export default PetContainer 
+export default Cats 
