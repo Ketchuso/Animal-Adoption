@@ -15,26 +15,29 @@ function Header() {
                        🐕
                 </span>
             </h1>
-            <NavLink to='/'>
-                <h2>
-                    All Pets
-                </h2>
-            </NavLink>
-            <NavLink to='/cats'>
-                <h2>
-                    Cats
-                </h2>
-            </NavLink>
-            <NavLink to='/dogs'>
-                <h2>
-                    Dogs
-                </h2>
-            </NavLink>
-            <NavLink to='/newpetform'>
-                <h2>
-                    AddPet
-                </h2>
-            </NavLink>
+            <div className="nav">
+                <NavLink id="all-pets" to='/'>
+                    <h2>
+                        All Pets
+                    </h2>
+                </NavLink>
+                <NavLink id="cats" to='/cats'>
+                    <h2>
+                        Cats
+                    </h2>
+                </NavLink>
+                <NavLink id="dogs" to='/dogs'>
+                    <h2>
+                        Dogs
+                    </h2>
+                </NavLink>
+                <NavLink id="addpet" to='/newpetform'>
+                    <h2>
+                        AddPet
+                    </h2>
+                </NavLink>
+            </div>
+            
         </header>
     )
 }

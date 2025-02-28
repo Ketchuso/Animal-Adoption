@@ -38,32 +38,47 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+.nav {
   background-color: #f0f0f0; /* Off-white */
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.nav h2 {
+  margin: 0; /* Removes any margin from the h2 elements */
+  padding: 10px 15px; /* Adds padding for better spacing */
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
+.nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
+  padding: 2.5px 5px; 
 }
 
-nav ul li a:hover {
+.nav a:hover {
   text-decoration: underline;
+  transform:scale(1.1);
+}
+
+#all-pets{
+  background-color: #A3A380;
+}
+
+#cats{
+  background-color: #D6CE93;
+}
+
+#dogs{
+  background-color: #D8A48F;
+}
+
+#addpet{
+  background-color: #BB8588;
 }
 
 /* Footer */
