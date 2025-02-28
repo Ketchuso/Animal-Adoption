@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PetCards from "./PetCards";
+import { useOutletContext } from "react-router-dom";
 
-function PetContainer({ pets, setPets }) {
+function PetContainer() {
     const [petFilter, setPetFilter] = useState('all')
+    const { pets, setPets } = useOutletContext()
+    console.log(pets)
 
     useEffect(() => {
       fetch("http://localhost:5002/pets")
@@ -35,6 +38,7 @@ function PetContainer({ pets, setPets }) {
         temperament={pet.temperament}
         adoptionStatus={pet.adoption_status}
         setPets={setPets}
+        type={pet.type}
         />)
 
         const handleFilterChange = (e) => {
@@ -45,12 +49,12 @@ function PetContainer({ pets, setPets }) {
     return(
         <div>
             <div>
-                <button value='all' onClick={handleFilterChange}> 🐾 View All Pets 🐾 </button>
-                <button value='cat' onClick={handleFilterChange}> 🐈 View All Cats 🐈 </button>
-                <button value='dog' onClick={handleFilterChange}> 🐕 View All Dogs 🐕 </button>
+                <button value='all' className='all-theme' onClick={handleFilterChange}> 🐾 View All Pets 🐾 </button>
+                <button value='cat' className='cat-theme' onClick={handleFilterChange}> 🐈 View All Cats 🐈 </button>
+                <button value='dog' className='dog-theme' onClick={handleFilterChange}> 🐕 View All Dogs 🐕 </button>
             </div>
 
-            <ul className="cards">
+            <ul className="main-container">
                 {petCards}
             </ul>
         </div>

@@ -48,11 +48,11 @@ function NewPetForm({ pets, setPets}) {
 
     
     return(
-        <div className="new-pet-form">
+        <div className="form">
         <h2>New Adoptable Pet</h2>
         <form>
-          <input onChange={petChange} type="text" name="name" placeholder="Pet name" />
-          <input onChange={petChange} type="text" name="image" placeholder="Image URL" />
+          <input onChange={petChange} type="text" name="name" placeholder="Insert Pet's Name" />
+          <input onChange={petChange} type="text" name="image" placeholder="Add Image URL" />
           <p>
               Animal Type:
               <label><input onChange={petChange} type="radio" name="type" value={"Cat"}/> Cat </label>
@@ -64,8 +64,8 @@ function NewPetForm({ pets, setPets}) {
               <label><input onChange={petChange} type="radio" name="age_group" value={"Adult"} defaultChecked={true}/> Adult </label>
               <label><input onChange={petChange} type="radio" name="age_group" value={"Senior Pet"}/> Senior Pet </label>
           </p>
-          <input onChange={petChange} type="text" name="temperament" placeholder="temperament" />
-          <input onChange={petChange} type="text" name="activities" placeholder="activities" />
+          <input onChange={petChange} type="text" name="temperament" placeholder="Describe Temperment Type" />
+          <input onChange={petChange} type="text" name="activities" placeholder="Activities They Enjoy" />
           <button onClick={handleSubmit} type="submit">Add Pet</button>
         </form>
       </div>

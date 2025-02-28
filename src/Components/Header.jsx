@@ -4,11 +4,14 @@ function Header() {
 
     
     return(
-        <header>
+        <header className="header">
             <h1>
+                <span className="logo" role="img">
+                      🐈  
+                </span>
                 🐾 Cuddly Cats & Adorable Dogs Adoption 🐾
                 <span className="logo" role="img">
-                      🐈  🐕
+                       🐕
                 </span>
             </h1>
            
