@@ -102,7 +102,7 @@ footer {
 .pet-card {
   background-color: #fff;
   border: 5px solid #ddd;
-  border-radius: 20px;
+  border-radius: 14px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -133,9 +133,24 @@ footer {
   color: #666;
 }
 
+/* All Pets Theme */
+.all-theme {
+  background-color: #f8eeb7; /* Light yellow */
+  cursor: pointer;
+}
+
+.call-theme .pet-card {
+  border: 2px solid #a39c80; /* Yellow */
+}
+
+.all-theme .pet-card:hover {
+  box-shadow: 0 4px 12px rgba(128, 111, 0, 0.2); /* Darker yellow shadow */
+}
+
 /* Cat Theme - Green */
 .cat-theme {
   background-color: #a5d693; /* Light green */
+  cursor: pointer;
 }
 
 .cat-theme .pet-card {
@@ -149,6 +164,7 @@ footer {
 /* Dog Theme - Pink */
 .dog-theme {
   background-color: #D8A48F ; /* Light pink */
+  cursor: pointer;
 }
 
 .dog-theme .pet-card {
@@ -160,18 +176,24 @@ footer {
 }
 
 /* Form Page - Add Adoptable Pet */
-form {
-  background-color: #fff;
+.form {
+  background-color: #f0f0f0;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 400px;
   margin: 20px auto;
+  
 }
 
-form input,
-form select,
-form textarea {
+form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.form-input,
+.form-select,
+.form-textarea {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -179,20 +201,21 @@ form textarea {
   border-radius: 4px;
 }
 
-form input[type="submit"] {
+.form input[type="submit"] {
   background-color: #4CAF50; /* Green */
   color: white;
   border: none;
   cursor: pointer;
 }
 
-form input[type="submit"]:hover {
+.form-input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-form textarea {
+.form-textarea {
   min-height: 100px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

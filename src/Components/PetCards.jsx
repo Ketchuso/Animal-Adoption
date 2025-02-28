@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-
-function PetCards({ id, name, image, activities, ageGroup, temperament, adoptionStatus, type}) {
+//tell Jay I had to add setPets here due to an error after merge. not sure why.
+function PetCards({ id, name, image, activities, ageGroup, temperament, adoptionStatus, type, setPets, viewPetClick}) {
     const petClass = type === 'Cat' ? 'cat-theme' : type === 'Dog' ? 'dog-theme' : '';
 
-    // function viewPetClick() {
+    const [viewPet, setViewPet] = useState(false);
 
-    // }
+    const toggleViewPet = () => {
+        setViewPet(!viewPet)
+    }
+
+    const handleViewClick = () => {
+        viewPetClick(id)
+    }
 
     function handleClick(){
         fetch(`http://localhost:5002/pets/${id}`,{
@@ -27,14 +33,20 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
 
     return(
         <div className={`pet-card ${petClass}`} >
-            <img src={image} alt={name} />
+            <img src={image} alt={name} onClick={handleViewClick}/>
             <h4>Hi! My name is: {name}</h4>
-            <h5>Age Group: {ageGroup}</h5>
-            <p>Short Description: {temperament}</p>
-            <p>This Pet Enjoys: {activities}</p>
-            <p>Adoption Status: {adoptionStatus}</p>
-            {/* <button onClick={viewPetClick.id}>🐾View Pet!🐾</button> */}
-            <button onClick={handleClick}>Delete Animal</button>
+            {viewPet && (
+                <div>
+                    <h5>Age Group: {ageGroup}</h5>
+                    <p>Short Description: {temperament}</p>
+                    <p>This Pet Enjoys: {activities}</p>
+                    <p>Adoption Status: {adoptionStatus}</p>
+                </div>
+            )}
+            <button onClick={toggleViewPet}>
+                {viewPet ? "🐾Hide Details🐾" : "🐾View Details!🐾"}
+            </button>
+            <button onClick={handleClick}>Remove Listing 🏡</button>
         </div>
     )
 }

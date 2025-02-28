@@ -46,7 +46,7 @@ function PetContainer({ pets, setPets }) {
     return(
         <div>
             <div>
-                <button value='all' onClick={handleFilterChange}> 🐾 View All Pets 🐾 </button>
+                <button value='all' className='all-theme' onClick={handleFilterChange}> 🐾 View All Pets 🐾 </button>
                 <button value='cat' className='cat-theme' onClick={handleFilterChange}> 🐈 View All Cats 🐈 </button>
                 <button value='dog' className='dog-theme' onClick={handleFilterChange}> 🐕 View All Dogs 🐕 </button>
             </div>

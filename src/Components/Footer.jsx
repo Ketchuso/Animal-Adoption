@@ -4,23 +4,23 @@ function Footer() {
 
     
     return(
-        <footer>
+        <footer className="footer">
             <h3 id="footerLogo">
                 🐾 Cuddly Cats & Adorable Dogs Adoption 🐾
                 <span className="logo" role="img">
                       🐈  🐕
                 </span>
             </h3>
-            <h4 id="contact">
-                Contact info:
-                <p>(555) Pet-ForYou</p>
+            <div className="contact">
+                <strong>Contact info:</strong>
+                <p>(555) Pet-4You</p>
                 <p>CCADA@toocuteforyou.com</p>
-            </h4>
-            <h4 id="address">
-                Locations:
+            </div>
+            <div className="address">
+                <strong>Locations:</strong>
                 <p>123 Cuddly Lane, Los Angeles, CA 90003</p>
                 <p>321 Adorable Street, Los Angeles, CA 90163</p>
-            </h4>
+            </div>
         </footer>
     )
 }
