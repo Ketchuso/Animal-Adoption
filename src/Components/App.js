@@ -4,7 +4,7 @@ import '../index.css';
 import { Outlet } from 'react-router-dom';
 import React from 'react';
 import Header from './Header';
-import PetPage from './PetPage';
+// import PetPage from './PetPage';
 import Footer from './Footer';
 
 

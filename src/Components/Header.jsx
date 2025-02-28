@@ -30,6 +30,11 @@ function Header() {
                     Dogs
                 </h2>
             </NavLink>
+            <NavLink to='/adopt'>
+                <h2>
+                    Adopt Today
+                </h2>
+            </NavLink>
             <NavLink to='/newpetform'>
                 <h2>
                     AddPet

@@ -3,7 +3,8 @@ import PetCards from "./PetCards";
 import { useOutletContext } from "react-router-dom";
 
 function PetContainer() {
-    const { pets, setPets } = useOutletContext()
+    const { pets, setPets, selectedPet, setSelectedPet } = useOutletContext()
+
     console.log(pets)
 
     useEffect(() => {
@@ -24,6 +25,7 @@ function PetContainer() {
         adoptionStatus={pet.adoption_status}
         setPets={setPets}
         type={pet.type}
+        selectedPet={() => setSelectedPet(pet)}
         />)
 
     return(

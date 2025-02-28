@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-//tell Jay I had to add setPets here due to an error after merge. not sure why.
-function PetCards({ id, name, image, activities, ageGroup, temperament, adoptionStatus, type, setPets, viewPetClick}) {
+function PetCards({ id, name, image, activities, ageGroup, temperament, adoptionStatus, type, setPets, onClick}) {
     const petClass = type === 'Cat' ? 'cat-theme' : type === 'Dog' ? 'dog-theme' : '';
 
     const [viewPet, setViewPet] = useState(false);
@@ -9,10 +8,6 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
     const toggleViewPet = () => {
         setViewPet(!viewPet)
     }
-
-    // const handleViewClick = () => {
-    //     viewPetClick(id)
-    // }
 
     function handleClick(){
         fetch(`http://localhost:5002/pets/${id}`,{
@@ -32,7 +27,7 @@ function PetCards({ id, name, image, activities, ageGroup, temperament, adoption
     }
 
     return(
-        <div className={`pet-card ${petClass}`} >
+        <div className={`pet-card ${petClass}`} onClick={onClick} >
             <img src={image} alt={name}/>
             <h4>Hi! My name is: {name}</h4>
             {viewPet && (

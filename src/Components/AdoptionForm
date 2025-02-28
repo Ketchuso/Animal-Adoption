@@ -1,0 +1,113 @@
+import React, { useState, useEffect } from "react";
+
+
+function AdoptionForm({ pet, setPets}) {
+  const [ adoptPet, setAdoptPet ] = useState({
+    name: pet.name || "",
+    type: pet.type,
+    age_group: pet.age_group,
+    temperament: pet.temperament,
+    activities: pet.activities,
+    image: pet.image,
+    adoption_status: pet.adoption_status || "Adoptable"
+  })
+
+  useEffect(() => {
+    setAdoptPet({
+      name: pet.name || "",
+      type: pet.type || "Dog",
+      age_group: pet.age_group || "Adult",
+      temperament: pet.temperament || "",
+      activities: pet.activities || "",
+      image: pet.image || "",
+      adoption_status: pet.adoption_status || "Adoptable"
+    });
+  }, [pet]);
+
+
+  function handleSubmit(event){
+    event.preventDefault();
+    const adoptPetData = {...adoptPet}
+
+    fetch("http://localhost:5002/pets", {
+      method: "POST",
+      body: JSON.stringify(adoptPetData),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(resp => resp.json())
+      .then(data => {
+        // setPets([...pets, data]);
+        setPets((prevPets) => [...prevPets, data]);
+        setAdoptPet({
+          name: "",
+          type: "Dog",
+          age_group: "Adult",
+          temperament: "",
+          activities: "",
+          image: "",
+          adoption_status: "Adoptable"
+        })
+      })
+  }
+
+
+  function petChange(event) {
+    const { name, value } = event.target;
+    setAdoptPet((prev) => ({ ...prev, [name]: value }));
+  }
+
+  return (
+    <div className="form">
+      <h2>Adopt This Pet</h2>
+      Display the Pet Profile
+      <div className="pet-profile">
+        <img src={pet.image} alt={pet.name} />
+        <h3>{pet.name}</h3>
+        <p>Type: {pet.type}</p>
+        <p>Age Group: {pet.age_group}</p>
+        <p>Temperament: {pet.temperament}</p>
+        <p>Activities: {pet.activities}</p>
+      </div>
+
+      {/* Adoption Form */}
+      <form onSubmit={handleSubmit}>
+        <input
+          onChange={petChange}
+          type="text"
+          name="name"
+          value={adoptPet.name}
+          placeholder="Insert Pet's Name"
+        />
+        <input
+          onChange={petChange}
+          type="text"
+          name="image"
+          value={adoptPet.image}
+          placeholder="Add Image URL"
+        />
+        <button type="submit">Submit Adoption Form</button>
+      </form>
+    </div>
+  );
+}
+
+export default AdoptionForm;
+    
+
+
+
+//     return(
+//         <div className="form">
+//         <h2>Adopt This Pet</h2>
+//         <form>
+//           <input onChange={petChange} type="text" name="name" placeholder="Insert Pet's Name" />
+//           <input onChange={petChange} type="text" name="image" placeholder="Add Image URL" />
+//           <button onClick={handleSubmit} type="submit">Submit Adoption Form</button>
+//         </form>
+//       </div>
+//     )
+// }
+
+// export default AdoptionForm
