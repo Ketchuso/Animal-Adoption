@@ -1,14 +1,22 @@
 import React, { useState } from "react";
-import PetContainer from "./PetContainer";
-import NewPetForm from "./NewPetForm";
+import { Outlet } from "react-router-dom";
+// import PetContainer from "./PetContainer";
+// import NewPetForm from "./NewPetForm";
+
 
 function PetPage() {
     const [pets, setPets] = useState([])
     
+    const context ={
+        pets,
+        setPets
+    }
+
     return(
         <main>
-            <PetContainer pets={pets} setPets={setPets}/>
-            <NewPetForm pets={pets} setPets={setPets}/>
+            <Outlet context={context}/>
+            {/* <PetContainer pets={pets} setPets={setPets}/>
+            <NewPetForm pets={pets} setPets={setPets}/> */}
         </main>
     )
 }

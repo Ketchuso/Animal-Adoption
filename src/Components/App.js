@@ -1,5 +1,7 @@
 import '../App.css';
+import '../index.css'; 
 
+import { Outlet } from 'react-router-dom';
 import React from 'react';
 import Header from './Header';
 import PetPage from './PetPage';
@@ -11,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PetPage />
+      <Outlet />
       <Footer />
     </div>
   );
