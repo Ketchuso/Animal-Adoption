@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PetCards from "./PetCards";
+import { useOutletContext } from "react-router-dom";
 
-function PetContainer({ pets, setPets }) {
+function PetContainer() {
     const [petFilter, setPetFilter] = useState('all')
+    const { pets, setPets } = useOutletContext()
+    console.log(pets)
 
     useEffect(() => {
       fetch("http://localhost:5002/pets")
