@@ -34,10 +34,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm run server`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project, the npm run server command is used to start the backend server  or a separate server for handling API requests, mock data, or similar backend operations. This allows the front-end React app to interact with the server and retrieve or submit data.
 
 
 ## 👩‍💻 Acknowledgments 👨‍💻
