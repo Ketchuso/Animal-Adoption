@@ -28,6 +28,7 @@ code {
 body {
   background-color: #EFEBCE;
   color: #333;
+  font-family: 'Jua';
   font-size: 16px;
   line-height: 1.6;
   display: flex;
@@ -163,6 +164,7 @@ footer {
   border-radius: 10px;
   padding: 2.5px 5px;
   margin: 3px;
+  font-family: 'Jua';
 }
 
 /* All Pets Theme */
@@ -209,7 +211,7 @@ footer {
 
 /* Form Page - Add Adoptable Pet */
 .form {
-  background-color: #f0f0f0;
+  background-color: #BB8588;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -227,8 +229,9 @@ form {
   width: 97%;
   padding: 7px ;
   margin: 10px 0 ;
-  border: 2px solid #ddd;
+  border: 2px solid #333;
   border-radius: 4px;
+  font-family: 'Jua';
 }
 
 
@@ -243,12 +246,13 @@ form {
 
 
 .form-submit {
-  background-color: #A3A380; /* Green */
+  background-color: #92a380; /* Green */
+  border-color:#333;
+  font-family: 'Jua';
 }
 .form-submit:hover {
-  background-color: #4CAF50; /* Green */
+  background-color: #A3A380; /* Green */
   color: white;
-  border: none;
   cursor: pointer;
 }
 
@@ -267,4 +271,3 @@ form {
     justify-content: center;
   }
 }
-
