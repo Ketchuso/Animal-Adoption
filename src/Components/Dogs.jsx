@@ -11,6 +11,7 @@ function Dogs() {
       fetch("http://localhost:5002/pets")
       .then((resp) => resp.json())
       .then((allPets) => setPets(allPets))
+      .catch(error => console.error("There was an error fetching in dogs:", error))
     }, [setPets])
 
 

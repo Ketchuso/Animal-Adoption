@@ -10,6 +10,7 @@ function PetContainer() {
       fetch("http://localhost:5002/pets")
       .then((resp) => resp.json())
       .then((allPets) => setPets(allPets))
+      .catch(error => console.error("There was an error fetching in petcontainer:", error))
     }, [setPets])
 
     const petCards = pets.map((pet) =>

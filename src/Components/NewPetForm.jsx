@@ -50,6 +50,7 @@ function NewPetForm() {
           adoption_status: "Adoptable"
         })
       })
+      .catch(error => console.error("There was an error adding new animal:", error))
   }
 
     
