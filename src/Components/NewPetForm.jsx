@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
  
 
-function NewPetForm({ pets, setPets}) {
+function NewPetForm() {
+  const { pets, setPets } = useOutletContext()
   const [ newPet, setNewPet ] = useState({
     name: "",
     type: "Dog",
@@ -23,6 +25,10 @@ function NewPetForm({ pets, setPets}) {
   function handleSubmit(event){
     event.preventDefault();
     const newPetData = {...newPet}
+    if (!newPet.name || !newPet.image || !newPet.temperament || !newPet.activities) {
+      alert("Please complete all forms to submit a New Pet.")
+      return 
+    }
 
     fetch("http://localhost:5002/pets", {
       method: "POST",
@@ -57,6 +63,7 @@ function NewPetForm({ pets, setPets}) {
           type="text"
           name="name"
           placeholder="Insert Pet's Name"
+          value={newPet.name}
         />
         <input
           className={"form-input"}
@@ -64,6 +71,7 @@ function NewPetForm({ pets, setPets}) {
           type="text"
           name="image"
           placeholder="Add Image URL"
+          value={newPet.image}
         />
 
         <div className="form-select-container">
@@ -132,6 +140,7 @@ function NewPetForm({ pets, setPets}) {
           type="text"
           name="temperament"
           placeholder="Describe Temperament Type"
+          value={newPet.temperament}
         />
         <input
           className={"form-input"}
@@ -139,6 +148,7 @@ function NewPetForm({ pets, setPets}) {
           type="text"
           name="activities"
           placeholder="Activities They Enjoy"
+          value={newPet.activities}
         />
         <button className={"form-submit"} onClick={handleSubmit} type="submit">
           Add Pet
