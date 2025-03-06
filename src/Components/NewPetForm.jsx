@@ -49,6 +49,7 @@ function NewPetForm() {
           image: "",
           adoption_status: "Adoptable"
         })
+        alert("Pet Added")
       })
       .catch(error => console.error("There was an error adding new animal:", error))
   }
@@ -57,7 +58,7 @@ function NewPetForm() {
   return (
     <div className="form">
       <h2>New Adoptable Pet</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           className={"form-input"}
           onChange={petChange}
@@ -151,7 +152,7 @@ function NewPetForm() {
           placeholder="Activities They Enjoy"
           value={newPet.activities}
         />
-        <button className={"form-submit"} onClick={handleSubmit} type="submit">
+        <button className={"form-submit"} type="submit">
           Add Pet
         </button>
       </form>
