@@ -1,8 +1,28 @@
-# Getting Started with Create React App
+## 🐾 Cuddly Cats & Adorable Dogs Adoption 🐾
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a project that is for making a website to display all of your cute pets that are up for adoption or pending adoption! You can filter between cats and dogs, see descriptions of each pet depending on their age, activities they enjoy and temperament of each pet. There is also a feature to add new pets that are up for adoption! You can also remove a pets listing once they’ve been adopted.
 
-## Available Scripts
+## ✨ Project Description ✨
+
+Cuddly Cats & Adorable Dogs Adoption is a web application built to facilitate the adoption process by providing a user-friendly interface to view and filter available pets. The website allows users to:
+
+    🐾 Browse through a list of available pets.
+    🐈 Filter between cats and dogs.
+    🐕 View detailed information on each pet (age, favorite activities, temperament).
+    🐾 Add new pets to the adoption list.
+    🏡 Remove a pet’s listing once they’ve been adopted.
+
+The application is built using React to provide smooth navigation and an interactive experience for users.
+
+## 💻 Technologies 💻
+
+This project was built using the following technologies:
+
+    React: For building the user interface and managing state.
+    React Router: For navigation between pages.
+    CSS: For styling the components.
+
+## 💾 Available Scripts 💾
 
 In the project directory, you can run:
 
@@ -14,57 +34,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm run server`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project, the npm run server command is used to start the backend server  or a separate server for handling API requests, mock data, or similar backend operations. This allows the front-end React app to interact with the server and retrieve or submit data.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 👩‍💻 Acknowledgments 👨‍💻
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Thanks to React and the React community for providing the tools that made this project possible.
+    Created by developers Kerissa and Jay.
